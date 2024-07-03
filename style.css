@@ -56,7 +56,9 @@ nav img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 79%;
+    height: 79%;           
+     text-align: center; /* Center horizontally */
+
     margin: 20px 20px 0px 20px;
     padding: 20px 20px 0px 20px;
     gap: 15px;
@@ -200,7 +202,6 @@ nav img {
     padding-left: 100px;
     height: 70vh;
     margin: auto;
-    margin-left: 200px;
     flex-direction: column;
     max-width: 30vw;
 }
@@ -302,8 +303,7 @@ footer {
 }
 
 footer a {
-    color: rgba(255, 255, 255, 0.7);
-    ;
+    color: rgba(255, 255, 255, 0.7);;
     font-size: small;
     text-decoration: underline;
 }
@@ -323,11 +323,21 @@ footer a {
 
 @media all and (max-width:1100px) {
 
+   
+.main-class {
+    height: 86vh;
+}
+
+.box {
+    height: 86vh;
+}
+
+
     .first,
     .first1,
     .second {
         flex-wrap: wrap;
-        height: 90vh;
+        height: 70vh;
     }
 
     .first .content>div:first-child {
@@ -341,18 +351,20 @@ footer a {
     }
 
     .second {
-        margin-left: 20px;
-        max-width: 30vw;
-        padding-left: 20px;
+          
+              max-width: 50vw;
+              padding-left: 20px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
     }
 
     .images img {
         width: 500px;
-        /* width: 30vw; */
         position: relative;
         z-index: 10;
         padding-bottom: 30px;
-        padding-left: 50px;
+        padding-left: 0px;
     }
 
     .images video {
@@ -363,12 +375,11 @@ footer a {
     }
 
     .images1 img {
-        width: 500px;
-        /* width: 30vw; */
+        width: 400px;
         position: relative;
         z-index: 10;
         padding-bottom: 30px;
-        padding-right: 50px;
+        padding-right: 0px;
     }
 
     .first1 .content>div:first-child {
@@ -385,6 +396,8 @@ footer a {
         margin: 10px 30px 0px 20px;
         padding: 20px 20px 0px 30px;
         width: 500px;
+
+        
     }
 
     .Input-class input {
@@ -431,7 +444,7 @@ footer a {
     }
 
     .FAQ .Input-class input {
-        width: 280px;
+        width: 250px;
         font-size: 150x;
     }
 
@@ -463,16 +476,134 @@ footer a {
         line-height: 1.5;
 
     }
+    
+    .footer {
+        grid-template-columns: 2fr 2fr;  
+        gap: 20px 20px;
+    }
+
+
+h1 {
+    font-size: 40px;
+    font-weight: 800;
 }
 
-@media all and (max-width:1100px) {
+}
+
+
+@media all and (max-width:660px) {
+
+    
+    .txt>div:first-child {
+        
+        font-size: 20px;
+    
+    }
+    
+    
+
+    .first .content>div:first-child {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    .images img {
+        width: 300px;
+    }
+
+    .images video {
+        width: 230px;
+        top: 40px;
+        right: 40px;
+    }
+
+    .images1 img {
+        width: 300px;
+    }
+
+    .first1 .content>div:first-child {
+        font-size: 20px;
+    }
+
+    .second .content>div:first-child {
+        font-size: 20px;
+    }
+
+    .Input-class {
+        margin: 10px 10px 0px 10px;
+        padding: 20px 20px 0px 30px;
+        width: 300px;
+    }
+
+    h1 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .Input-class input {
+        width: 200px;
+        font-size: 90x;
+    }
+
+
+    .Started-btn {
+        font-size: 10px;
+        padding: 8px 8px;
+    }
+
+    .FAQ {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .FAQ .txt>div:nth-child(2) {
+        font-size: 13px;
+    }
+
+
+    .FAQ .Input-class {
+        margin: 0px 0px 0px 0px;
+        padding: 20px 0px 0px 0px;
+        width: 350px;
+    }
+
+    .FAQ .Input-class input {
+        width: 200px;
+        font-size: 80x;
+    }
+
+    .FAQ .Input-class .Started-btn {
+        font-size: 10px;
+        padding: 8px 8px;
+    }
+
+    .ques {
+        height: 4vh;
+        font-size: 15px;
+        margin: 10px 10px 10px 10px;
+        padding: 20px 10px 20px 20px;
+    }
+
+    .first1 .content>div:nth-child(2),
+    .first .content>div:nth-child(2),
+    .first .content>div:nth-child(2) {
+        font-size: 15px;
+    }
+
+  
     .footer {
         grid-template-columns: 1fr 1fr;
         padding-bottom: 100px;
+        gap: 20px 40px;
     }
 
     footer a {
-        font-size: smaller;
+        font-size: 10px;
     }
 
     footer {
@@ -480,7 +611,9 @@ footer a {
         height: 40vh;
     }
 
-    .footer-class {
-        column-gap: 20px;
-    }
+   
 }
+
+
+
+    
